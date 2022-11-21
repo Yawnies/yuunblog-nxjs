@@ -38,14 +38,14 @@ const Blogs = ({ blogs }) => {
         <div>
             <h1 className="text-2xl my-4">All Blogs</h1>
             {blogarr.map(doc => (
-                    <Link href={`/blogs/${doc.id}`}>
+                    <Link key={doc.id} href={`/blogs/${doc.id}`}>
                         <div key={doc.id} className=" group flex justify-between rounded-xl mb-2 p-5 border border-l-4 hover:border-l-4 hover:border-l-indigo-500 relative overflow-hidden">
-                            <div key={doc.id} className="flex items-center">
-                                <div key={doc.id}>
-                                    <h3 key={doc.id} className=" font-bold group-hover:text-indigo-500">{doc.title}</h3>
+                            <div className="flex items-center">
+                                <div>
+                                    <h3 className=" font-bold group-hover:text-indigo-500">{doc.title}</h3>
                                     <p>Written by <span className=" font-semibold">{doc.author}</span> | {dateConvert(doc.created_at)}</p>
                                 </div>
-                                <div key={doc.id} className="ml-4">
+                                <div className="ml-4">
                                     <Tag tags={doc.tag} />
                                 </div>
                             </div>
