@@ -49,7 +49,7 @@ const Blogs = ({ blogs }) => {
                                     <Tag tags={doc.tag} />
                                 </div>
                             </div>
-                            <Image src={doc.image} height={300} width={300} className="flex absolute right-0 top-0" />
+                            <Image src={doc.image} height={300} width={300} className="flex absolute right-0 top-0" alt="shit" />
                         </div>
                     </Link>
             ))}

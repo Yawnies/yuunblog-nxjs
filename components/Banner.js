@@ -8,7 +8,7 @@ const Banner = (props) => {
     if (props.title === null) {
         return (
             <div>
-                <Image src={'https://i.imgur.com/PHel0m0.jpeg'} height={667} width={667} />
+                <Image src={'https://i.imgur.com/PHel0m0.jpeg'} height={667} width={667} alt="shit" />
             </div>
         )
     }

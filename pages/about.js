@@ -18,7 +18,7 @@ const About = () => {
                 focus of what I'm trying to learn. 
             </p>
             <br />
-            <Image src="https://i.imgur.com/XE1bBO8.gif" height={500} width={500} className=" rounded-xl self-center" />
+            <Image src="https://i.imgur.com/XE1bBO8.gif" height={500} width={500} className=" rounded-xl self-center" alt="shit" />
         </div>
         </>
     );
