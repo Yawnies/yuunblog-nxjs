@@ -34,7 +34,8 @@ export const getStaticProps = async (context) => { // behaves as map method
     const dataArray = data[0]; // needs to be selected since data returns an array containing an object
 
     return {
-        props: { dataArray }
+        props: { dataArray },
+        revalidate: 30,
     }
 }
 

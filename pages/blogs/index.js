@@ -15,7 +15,8 @@ export const getStaticProps = async () => {
     const jsoned = JSON.stringify(dataArr);
 
     return {
-        props: { blogs: jsoned }
+        props: { blogs: jsoned },
+        revalidate: 30,
     }
 }
 
